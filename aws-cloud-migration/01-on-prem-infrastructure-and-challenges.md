@@ -1,3 +1,5 @@
+## 1. Case Study - Company Background
+
 WileyPLUS is an online teaching & learning platform that provides:
 * **Institutions:** Integration with major Learning Management Systems (LMS) like Blackboard, Canvas, Moodle, and Brightspace, enabling single sign-on (SSO).
 * **Instructors:** The ability to assign Wiley-provided resources directly within their LMS courses.
@@ -5,15 +7,13 @@ WileyPLUS is an online teaching & learning platform that provides:
 
 This report was developed using insights gained through meetings with Wiley to outline the WileyPLUS on-premises architecture, including its components, functions, operational processes, challenges, and service level agreement targets.
 
-Section 2 analyzes the WileyPLUS on-premises IT infrastructure.
-
 ---
 
-## 1. WileyPLUS On-Premises IT Infrastructure
+## 2. WileyPLUS On-Premises IT Infrastructure
 
 WileyPLUS operates on a multi-zone architecture, with its primary data center located in Hoboken, New Jersey, USA. The platform combines core components such as Akamai Content Delivery Network (CDN), Application Servers, Enterprise Server, and Content Servers, with LMS integrations. The WileyPLUS architecture is illustrated in Figure 1, while the main components and their functions are detailed in Table 1.
 
-![Figure 1. WileyPLUS On-Premises Multi-Zone IT Architecture](images/figure-1.png)
+![Figure 1. WileyPLUS On-Premises Multi-Zone IT Architecture](figure-1.png)
 
 **Table 1. WileyPLUS On-Premises Infrastructure Components and Their Functions**
 
@@ -34,7 +34,7 @@ WileyPLUS operates on a multi-zone architecture, with its primary data center lo
 
 ---
 
-## Challenges of the On-Premises IT Infrastructure
+## 3. Challenges of the On-Premises IT Infrastructure
 
 Even though the on-premises model historically supported thousands of concurrent sessions, it suffers from several major challenges that hinder WileyPLUS’s availability goals and digital transformation strategy. These challenges can be grouped into six interrelated themes as shown below:
 
@@ -47,7 +47,7 @@ Even though the on-premises model historically supported thousands of concurrent
 
 ---
 
-## 2. Impact of On-Premises Challenges and Strategic Need for Cloud Migration
+## 4. Impact of On-Premises Challenges and Strategic Need for Cloud Migration
 
 The above architectural challenges directly affect students, instructors, and Wiley’s business operations. For students and instructors, slow content delivery, authentication bottlenecks, and database latency degrade the learning and teaching experience due to delayed page loads, login failures, and inconsistent roster or grade synchronization. Instructors face additional administrative burdens, often resorting to manual interventions. These disruptions are particularly damaging during high-stakes examination periods, undermining trust in the platform’s reliability. 
 
@@ -61,6 +61,24 @@ Both phases are analyzed in detail to demonstrate how they address the six key c
 
 ---
 
-## 3. Summary
+## 5. Summary
 
 In summary, the WileyPLUS on-premises architecture has enabled global digital learning delivery at scale but faces critical challenges in scalability, integration flexibility, and operational efficiency. Authentication and content delivery rely on monolithic applications and legacy network infrastructure, while LMS integrations are fragmented through custom Blackboard APIs and Tibco middleware. Static scaling of databases and network appliances limits responsiveness to peak demand, and operations remain highly manual. These issues collectively degrade user experience during critical academic periods, increase operational risk and cost, and obscures business goals. This necessitates a strategic migration to AWS, where cloud-native architectures can address these systemic constraints.
+
+---
+
+## 6. References
+
+## References
+
+1. Akamai Technologies (2025). *Content Delivery Network Solutions*. [Online]. 2025. Akamai. Available from: https://www.akamai.com/solutions/content-delivery-network. [Accessed: 27 September 2025].
+2. Blount, Y. & Mcneill, M. (2010). Using and evaluating publisher-supplied software: A case study of an undergraduate unit. *ASCILITE Publications*.
+3. Echelon (2023). *How Wiley Sri Lanka Is Unlocking Human Potential*. [Online]. 7 June 2023. Echelon Media (Pvt) Ltd. Available from: https://echelon.lk/how-wiley-sri-lanka-is-unlocking-human-potential/. [Accessed: 27 September 2025].
+4. John Wiley & Sons (2025a). *Support – WileyPLUS*. [Online]. 2025. WileyPLUS. Available from: https://wpsupport.wiley.com/s/. [Accessed: 27 September 2025].
+5. John Wiley & Sons (2025b). *Wiley*. [Online]. 2025. Wiley. Available from: https://www.wiley.com/en-us/. [Accessed: 27 September 2025].
+6. John Wiley & Sons (2025c). *WileyPLUS*. [Online]. 2025. Wiley. Available from: https://www.wiley.com/en-us/grow/teach-learn/teacher-resources/courseware/wileyplus/. [Accessed: 27 September 2025].
+7. John Wiley & Sons (2007). *WileyPLUS Student User Guide*. [Online]. Available from: https://phyweb.physics.nus.edu.sg/~phytaysc/pc1221_07/Student%20User%20Guide.pdf. [Accessed: 27 September 2025].
+8. Michigan State University (2025). *WileyPLUS*. [Online]. 2025. D2L Help – Michigan State University. Available from: https://help.d2l.msu.edu/msu-docs/other-tools-at-msu/wileyplus. [Accessed: 27 September 2025].
+9. Oracle Corporation (2025a). *MySQL*. [Online]. 2025. Available from: https://www.mysql.com/. [Accessed: 27 September 2025].
+10. Oracle Corporation (2025b). *Oracle*. [Online]. 2025. Oracle. Available from: https://www.oracle.com/asean/. [Accessed: 27 September 2025].
+11. TIBCO Technologies (2025). *TIBCO*. [Online]. 2025. TIBCO. Available from: https://www.tibco.com/. [Accessed: 27 September 2025].
